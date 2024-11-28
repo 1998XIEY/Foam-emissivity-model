@@ -1,5 +1,8 @@
 
 program foam_emis
+
+   ! do not use this code
+   
    use Ocean_Permittivity
    use two_streams
    implicit none
