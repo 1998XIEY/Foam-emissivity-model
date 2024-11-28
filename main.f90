@@ -7,7 +7,7 @@ program foam_emis
     real(8) Temperature,Salinity,Frequency
     integer i_freq,i_angle,i_z,i_vf
 
-    open(2001,file='/mnt/data/home/xieyc/work/FoamRTM/Two_stream_foam_emissivity/results/TS_test.txt')
+    open(2001,file='TS_test.txt')
  
     do i_freq=1,1
        do i_angle=1,1     !7
