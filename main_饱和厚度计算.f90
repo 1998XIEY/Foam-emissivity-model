@@ -34,7 +34,7 @@ program foam_emis
    e_h0=0.0
 
 
-   open(2001,file='/mnt/data/home/xieyc/work/Two-streams/results/TS_Z_saturation.txt')
+   open(2001,file='TS_Z_saturation.txt')
 
    do i_freq=1,37
       do i_angle=1,80     !7
@@ -54,35 +54,6 @@ program foam_emis
             z_max=i_z*0.1
             vf_top=0.90
             vf_bot=0.01
-
-            !-----------------------------------------------------------------
-            ! Camps 1
-            ! Frequency=1.4  !GHz
-            ! Temperature = 273.15+20.6
-            ! Salinity = 10.49
-            ! z_max=1.099  !cm
-            ! vf_top=0.2227        
-            ! vf_bot=0.01
-
-            
-            ! Rose 1
-            ! Frequency=10.8 !GHz
-            ! Temperature = 273.15+19.0
-            ! Salinity = 10.0
-            ! z_max=2.8  !cm
-            ! vf_top=0.93      
-            ! vf_bot=0.01     
-            
-            ! rose2
-            ! Frequency=36.5 !GHz
-            ! Temperature = 273.15+19.0
-            ! Salinity = 10.0
-            ! z_max=2.8  !cm
-            ! vf_top=0.91      
-            ! vf_bot=0.01  
-            !-------------------------------------------------------------
-            
-
 
             m=0.1
             a=vf_top+m
@@ -146,18 +117,6 @@ program foam_emis
             !----------------------结束
 
 
-
-            ! print*,theta/pi*180,e_v,e_h
-            ! write(2001,'(3e13.5)') theta/pi*180,e_v,e_h
-
-            ! print*,z_max,e_v,e_h
-            ! write(2001,'(3e13.5)') z_max,e_v,e_h
-
-            !write(2001,'(3e13.5)') Frequency,e_v,e_h
-            !输出foam 介电常数,100层
-            ! do i=1,100
-            !    write(2001,'(3e13.5)') vf(i),real(foam_permittivity(i)),aimag(foam_permittivity(i))
-            ! enddo
 
          enddo
       enddo
