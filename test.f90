@@ -1,6 +1,6 @@
 
 program foam_emis
 
-   ! do not use this code
+   ! for test
    
 end program foam_emis
